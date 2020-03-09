@@ -21,6 +21,8 @@ else {
     $body = "Please pass a name on the query string or in the request body."
 }
 
+Write-Host "This is a very important logging statement!"
+
 # Associate values to output bindings by calling 'Push-OutputBinding'.
 Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
     StatusCode = $status
